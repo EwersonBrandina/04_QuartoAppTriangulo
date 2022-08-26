@@ -11,7 +11,7 @@ export class Tab3Page {
   num2 : string
   num3 : string
   saida : any
-  img : any = "assets/icon/favicon.png"
+  img : any = "assets/icon/calculadora.gif"
 
   constructor() {}
 

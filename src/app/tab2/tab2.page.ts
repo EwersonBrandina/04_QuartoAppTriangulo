@@ -10,7 +10,7 @@ export class Tab2Page {
 
   Base : string
   Altura : string
-  img : any = "assets/icon/favicon.png"
+  img : any = "assets/icon/calculadora.gif"
   resultado : any
 
   constructor(private alertController: AlertController) {}
