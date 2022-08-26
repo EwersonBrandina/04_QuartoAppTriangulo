@@ -14,6 +14,26 @@
   </ion-header>
 
   <div id="container">
-    <ion-label>Teste3</ion-label>
+    <ion-label>Teste</ion-label>
+  
+    <ion-item>
+      <ion-label position="floating">Lado A:</ion-label>
+      <ion-input [(ngModel)]="num1"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Lado B:</ion-label>
+      <ion-input [(ngModel)]="num2"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Lado C:</ion-label>
+      <ion-input [(ngModel)]="num3"></ion-input>
+    </ion-item>
+
+    <ion-button color="dark" shape="round" (click)="analisar()">Calcular</ion-button>
+
+    <p>{{saida}}</p>
+    <ion-img src="{{img}}"></ion-img>
   </div>
 </ion-content>

@@ -20,13 +20,14 @@ analisar(){
   var b = parseFloat(this.num2)
   var c = parseFloat(this.num3)
 
-  if ((a + b) > c && (a + c) > b && (b + c) > a){
+  if ((a + b) > c && (a + c) > b && (b + c) > a){    
+    
     if ((a != b) && (a != c) && (b != c)){
       this.saida = "Escaleno"
       this.img = "assets/escaleno.png"
     }
 
-    if ((a == b) && (a == c) && (b == c)){
+    else if ((a == b) && (a == c) && (b == c)){
       this.saida = "Equilatero"
       this.img = "assets/equilatero.png"
     }

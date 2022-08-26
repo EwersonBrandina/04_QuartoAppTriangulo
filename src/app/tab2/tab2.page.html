@@ -14,7 +14,21 @@
   </ion-header>
 
   <div id="container">
-    <ion-label>Teste2</ion-label>
+    <ion-label>Teste</ion-label>
+
+    <ion-item>
+      <ion-label position="floating">Base:</ion-label>
+      <ion-input [(ngModel)]="Base"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Altura:</ion-label>
+      <ion-input [(ngModel)]="Altura"></ion-input>
+    </ion-item>
+
+    <ion-button color="dark" shape="round" (click)="analisar()">Calcular</ion-button>
+
+    <ion-img src="{{img}}"></ion-img>
   </div>
 
 </ion-content>

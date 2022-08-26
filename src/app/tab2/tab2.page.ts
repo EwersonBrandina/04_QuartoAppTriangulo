@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab2',
@@ -7,6 +8,35 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
+  Base : string
+  Altura : string
+  img : any = "assets/icon/favicon.png"
+  resultado : any
 
+  constructor(private alertController: AlertController) {}
+    
+    async presentAlert(result) {
+      const alert = await this.alertController.create({
+        header: "Area",
+        subHeader: '',
+        message: result,
+        buttons: ['FECHAR'],
+  });
+  await alert.present();
 }
+
+  analisar(){
+    var b = parseFloat(this.Base)
+    var h = parseFloat(this.Altura)
+    if ((b != 0 && h != 0) && (b + h >= 0) || (b - h <= 0)){
+      this.resultado = (b*h)/2
+      var result = this.resultado
+      this.presentAlert(result)
+    }
+    else{
+      result = "Triangulo inexitente"
+      this.presentAlert(result)
+    }
+}
+}
+
