@@ -39,7 +39,7 @@ analisar(){
 
   else{
     this.saida = "Triangulo Não Existe"
-    this.img = "assets/icon/favicon.png"
+    this.img = "assets/icon/alerta.png"
   }
 }
 }

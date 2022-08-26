@@ -26,9 +26,11 @@ export class Tab3Page {
       var area = ((p*(p-a)*(p-b)*(p-c))**(0.5)).toFixed(2)
       
       this.saida = area
+      this.img = "assets/icon/calculadora.gif"
     }
     else{
       this.saida = "Triangulo não existe!!!"
+      this.img = "assets/icon/alerta.png"
     }
   }
 }
